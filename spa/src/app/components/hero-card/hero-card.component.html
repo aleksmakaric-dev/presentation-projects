@@ -1,0 +1,16 @@
+<mat-card class="hero-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ hero.name }}</mat-card-title>
+      <mat-card-subtitle>{{ hero.creator }}</mat-card-subtitle>
+      <img mat-card-sm-image [src]="hero.image" [alt]="hero.name" />
+    </mat-card-title-group>
+  </mat-card-header>
+  <mat-card-content>
+    {{ hero.power }}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button (click)="handleHeroDeletion(hero.id)">PREVIEW</button>
+    <button mat-button (click)="handleHeroDeletion(hero.id)">DELETE</button>
+  </mat-card-actions>
+</mat-card>

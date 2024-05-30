@@ -1,0 +1,30 @@
+<main class="hero-list main-content">
+  <h1 class="h1">Hero List</h1>
+
+  <div class="hero-list__search-container">
+    <mat-form-field appearance="outline">
+      <input
+        matInput
+        type="search"
+        placeholder="Search heroes"
+        [(ngModel)]="searchQuery"
+      />
+    </mat-form-field>
+    <button
+      mat-icon-button
+      aria-label="Button to search heroes"
+      (click)="searchHeroes()"
+    >
+      <mat-icon>search</mat-icon>
+    </button>
+  </div>
+
+  <ul>
+    <li *ngFor="let hero of heroes">
+      <app-hero-card
+        [hero]="hero"
+        (emittedDeletedHero)="deleteHero($event)"
+      ></app-hero-card>
+    </li>
+  </ul>
+</main>

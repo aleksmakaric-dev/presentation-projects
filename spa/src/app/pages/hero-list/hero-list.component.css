@@ -1,0 +1,20 @@
+.hero-list ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.hero-list .hero-list__search-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-list .hero-list__search-container button {
+  width: 56px;
+  height: 56px;
+}

@@ -1,0 +1,10 @@
+.hero-card {
+  width: 400px;
+  min-height: 190px;
+  background-color: cornsilk;
+
+  @media screen and (max-width: 500px) {
+    width: 340px;
+    min-height: 200px;
+  }
+}
